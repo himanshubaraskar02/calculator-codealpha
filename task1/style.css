@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+/* Calculator Card */
+
+.calculator{
+background:#1e1e2f;
+padding:25px;
+border-radius:15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.4);
+width:260px;
+}
+
+/* Display Screen */
+
+#display{
+width:100%;
+height:60px;
+margin-bottom:15px;
+border:none;
+border-radius:10px;
+background:#2d2d44;
+color:white;
+font-size:28px;
+text-align:right;
+padding:10px;
+}
+
+/* Buttons Grid */
+
+.buttons{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+/* Buttons */
+
+button{
+padding:18px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+background:#3a3a5a;
+color:white;
+transition:0.2s;
+}
+
+/* Hover Effect */
+
+button:hover{
+background:#505080;
+transform:scale(1.05);
+}
+
+/* Operator Buttons */
+
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16){
+background:#ff9500;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover{
+background:#ffa733;
+}
+
+/* Equal Button */
+
+button:nth-child(14){
+background:#28c76f;
+}
+
+button:nth-child(14):hover{
+background:#33d980;
+}
+
+/* Clear Button */
+
+button:nth-child(15){
+background:#ea5455;
+}
+
+button:nth-child(15):hover{
+background:#ff6b6b;
+}
